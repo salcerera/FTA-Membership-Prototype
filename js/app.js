@@ -20,3 +20,8 @@ function scrollFunction() {
         document.getElementById("b2top").style.display = "none";
     }
 }
+
+
+$(document).ready(function() {
+    $('#example').DataTable();
+} );

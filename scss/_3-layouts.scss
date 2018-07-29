@@ -44,8 +44,16 @@ section {
 }
 
 
-.notification, .profile, .login-panel, .affilliates, .support {
+.notification, .profile, .login-panel, .affilliates, .support, .modules {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+  padding: 50px 0px;
+}
+
+.tribe {
+  min-height: 400px;
   display: flex;
   justify-content: center;
   //align-items: center;
@@ -74,4 +82,26 @@ section {
   background-position: center;
   background-size: cover;
   height: 100vh !important;
+}
+
+.bg-tribe {
+  background: url('../img/bg-tribe.png');
+  background-position: 50% 120%;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  background-attachment: fixed;
+  margin-top: 0 !important;
+}
+
+.bg-modules {
+  background: url('../img/bg-modules.png');
+  background-position: 50% 120%;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  background-attachment: fixed;
+  margin-top: 0 !important;
 }

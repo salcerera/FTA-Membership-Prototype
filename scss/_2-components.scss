@@ -105,6 +105,14 @@ a {
     background: $fta-blue;
 }
 
+.bg-transparent {
+    background: transparent !important;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
 .z-index-top {
     z-index: 2000 !important;
 }
@@ -154,6 +162,16 @@ a {
     box-shadow: 0px 3px 6px rgba(0,0,0,0.24) !important;
 }
 
+.btn-lg {
+    width: 200px !important;
+}
+
+.btn-small {
+    font-size: 14px !important;
+    min-width: 150px !important;
+    padding: 10px 20px !important;
+}
+
 
 #b2top {
     display: none; /* Hidden by default */
@@ -184,6 +202,8 @@ a {
     align-items: center !important;
     min-height: 100%;
 }
+
+
 
 // containers 
 

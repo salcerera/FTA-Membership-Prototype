@@ -62,6 +62,12 @@ a {
 .bg-blue {
   background: #2B4060; }
 
+.bg-transparent {
+  background: transparent !important; }
+
+.no-shadow {
+  box-shadow: none !important; }
+
 .z-index-top {
   z-index: 2000 !important; }
 
@@ -99,6 +105,14 @@ a {
   padding: 15px 30px !important;
   font-size: 16px !important;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.24) !important; }
+
+.btn-lg {
+  width: 200px !important; }
+
+.btn-small {
+  font-size: 14px !important;
+  min-width: 150px !important;
+  padding: 10px 20px !important; }
 
 #b2top {
   display: none;
@@ -184,8 +198,14 @@ body {
 section {
   min-height: 400px; }
 
-.notification, .profile, .login-panel, .affilliates, .support {
+.notification, .profile, .login-panel, .affilliates, .support, .modules {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px; }
+
+.tribe {
+  min-height: 400px;
   display: flex;
   justify-content: center;
   padding: 50px 0px; }
@@ -208,6 +228,26 @@ section {
   background-position: center;
   background-size: cover;
   height: 100vh !important; }
+
+.bg-tribe {
+  background: url("../img/bg-tribe.png");
+  background-position: 50% 120%;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  background-attachment: fixed;
+  margin-top: 0 !important; }
+
+.bg-modules {
+  background: url("../img/bg-modules.png");
+  background-position: 50% 120%;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  background-attachment: fixed;
+  margin-top: 0 !important; }
 
 .bg-dark {
   background: #2B4060 !important; }
@@ -301,6 +341,9 @@ a.social-icons {
   outline: none !important;
   box-shadow: 0px 20px 42px rgba(0, 0, 0, 0.07) !important; }
 
+.card-no-shadow {
+  box-shadow: none !important; }
+
 @media (min-width: 980px) {
   .testimonials-card .card-body {
     display: flex !important; } }
@@ -329,7 +372,31 @@ a.social-icons {
 
 .user-details .user-social {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.tribe p.lead {
+  width: 100% !important;
+  text-align: center;
+  margin: 0 auto; }
+  @media (min-width: 980px) {
+    .tribe p.lead {
+      width: 70% !important;
+      text-align: center !important; } }
+
+@media (min-width: 980px) {
+  .card-leaders .card-body {
+    display: flex !important; } }
+
+.modules p.lead {
+  width: 100% !important;
+  text-align: center;
+  margin: 0 auto; }
+  @media (min-width: 980px) {
+    .modules p.lead {
+      width: 70% !important;
+      text-align: center !important; } }
 
 a.social-icons {
   background: #2B4060;
