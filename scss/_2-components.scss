@@ -1,0 +1,214 @@
+// Add your components here such as custom variables, UI elements, Typorgraphy
+
+
+// Variables
+
+$font-stack: 'montserrat', 'sans-serif';
+$bold: bold;
+$letter-1: lpx;
+$letter-2: 2px;
+$muted: rgba(0,0,0,0.5);
+$bg-muted: #f3f3f3;
+
+// Color Scheme
+
+$fta-blue: #2B4060;
+$fta-orange: #FF5F00;
+$fta-orange-light: #FE7820;
+$fta-letter: 3px;
+
+
+// Typography | Color | Shadow
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-stack;
+    font-weight: $bold;
+}
+
+.main-heading {
+
+    @media (min-width: 980px) {
+        font-size: 4em !important;
+    }
+}
+
+p, a {
+    font-family: $font-stack;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px !important;
+}
+
+.base {
+    font-size: 16px !important;
+}
+
+.muted {
+    color: $muted;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.p-small {
+    font-size: 14px !important;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #0d0d0d;
+}
+
+.p-bold {
+    font-weight: bold !important;
+}
+
+.hover-orange:hover {
+    color: rgba($color: #FF5F00, $alpha: 0.7);
+}
+
+.text-orange {
+    color: $fta-orange-light;
+}
+
+.text-blue {
+    color: $fta-blue;
+}
+
+.bg-muted {
+    background: $bg-muted !important;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.bg-orange {
+    background: $fta-orange;
+}
+
+.bg-orange-light {
+    background: $fta-orange-light;
+}
+
+.bg-blue {
+    background: $fta-blue;
+}
+
+.z-index-top {
+    z-index: 2000 !important;
+}
+
+.sub-heading {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+}
+
+.sub-heading::before {
+    content: "  ";
+    border: solid 2px $fta-orange-light;
+    margin: 0px 10px;
+}
+
+
+// Buttons
+
+.btn-primary {
+    background-color: $fta-orange-light !important;
+    border: 1px solid $fta-orange-light !important;
+    outline: none !important;
+}
+
+.btn-secondary {
+    background-color: $fta-blue !important;
+    border: 1px solid $fta-blue !important;
+    outline: none !important;
+}
+
+.btn:hover {
+    box-shadow: 0px 10px 42px rgba(0,0,0,0.16) !important;
+}
+
+.btn:focus, .btn:active, .btn:active:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn {
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    padding: 15px 30px !important;
+    font-size: 16px !important;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.24) !important;
+}
+
+
+#b2top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: $fta-blue; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.24) !important;
+}
+
+
+
+
+// Cards
+
+.carousel-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100%;
+}
+
+// containers 
+
+.drop-shadow-lg {
+    box-shadow: -10px 20px 72px rgba(0,0,0,0.30);
+}
+
+.drop-shadow-md {
+    box-shadow: 0px 20px 42px rgba(0,0,0,0.24);
+}
+
+.drop-shadow-sm {
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.24);
+}
+
+// Icons
+
+
+
+
+// Forms
+
+input, textarea{
+    background: rgba(0,0,0,0.050) !important;
+    border: none !important;
+    padding: 25px 20px !important;
+    box-shadow: none !important;
+}
