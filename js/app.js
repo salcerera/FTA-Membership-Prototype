@@ -25,3 +25,16 @@ function scrollFunction() {
 $(document).ready(function() {
     $('#example').DataTable();
 } );
+
+$(document).ready(function() {
+    $('#affil').DataTable();
+} );
+
+$(document).ready(function() {
+    $('#encash').DataTable();
+} );
+
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})

@@ -29,7 +29,7 @@
   <body>
       <header id="top">
           <!-- Fixed navbar -->
-          <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
             <div class="container py-2">
                 <a class="navbar-brand" href="#"><img src="img/Logo-dark.png" width = "24px" alt="FTA Logo" class="mx-3"><span class="uppercase"></span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,7 @@
                       </li>
 
                       <li class="nav-item active mx-2">
-                          <a class="nav-link disabled" href="affilliates.html">Affilliates</a>
+                          <a class="nav-link disabled" href="affiliates.html">Affiliates</a>
                       </li>
 
                       <li class="nav-item dropdown active mx-2">
@@ -111,9 +111,9 @@
                         <!-- Breadcrumbs-->
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                            <a href="#">Dashboard</a>
+                            <a href="#" class="text-blue hover-orange">Dashboard</a>
                             </li>
-                            <li class="breadcrumb-item active">UI Components</li>
+                            <li class="breadcrumb-item active">Cards</li>
                         </ol>
 
                         <div class="components my-5">
@@ -137,27 +137,673 @@
                                             This is some text within a card body.
                                         </div>
                                     </div>
-                                
                             </div> <!-- end col -->
+
+                            <p class="lead">Affiliate Card Deck</p>
+                            <div class="card-deck">
+                                <div class="card text-center bg-blue text-white" style="max-width: 18rem;">
+                                    <div class="card-header bg-orange text-white uppercase p-bold">
+                                        Total Income
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-text p-bold text-center">
+                                            PHP 6,000
+                                        </h4>
+                                    </div>
+                                </div>  <!-- end card -->
+    
+                                <div class="card text-center bg-blue text-white" style="max-width: 18rem;">
+                                    <div class="card-header bg-orange text-white uppercase p-bold">
+                                        Affiliates Income
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-text p-bold text-center">
+                                            PHP 6,000
+                                        </h4>
+                                    </div>
+                                </div>  <!-- end card -->
+    
+                                <div class="card text-center bg-blue text-white" style="max-width: 18rem;">
+                                    <div class="card-header bg-orange text-white uppercase p-bold">
+                                        Passive Income
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-text p-bold text-center">
+                                            PHP 6,000
+                                        </h4>
+                                    </div>
+                                </div>  <!-- end card -->
+    
+                                <div class="card text-center bg-blue text-white" style="max-width: 18rem;">
+                                    <div class="card-header bg-orange text-white uppercase p-bold">
+                                        Company Bonus
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-text p-bold text-center">
+                                            PHP 6,000
+                                        </h4>
+                                    </div>
+                                </div>  <!-- end card -->
+                            </div> <!-- end card deck -->
+
+                           <div class="col-sm-12 my-5 bg-white py-5">
+                            <h5 class="text-center mb-5">Tab Style</h5>
+                            <!-- UI Tabs -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-blue hover-orange p-bold active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-blue hover-orange p-bold" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-blue hover-orange p-bold" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <p class="lead mt-5 muted px-3">add content here</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <p class="lead mt-5 muted px-3">add content here</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                        <p class="lead mt-5 muted px-3">add content here</p>
+                                    </div>
+                                </div>  <!-- UI Tabs ends here -->
+                           </div>
+
+                           <div class="col-sm-12 py-5 bg-white my-5">
+                                <h5 class="text-center mb-5">Forms</h5> <hr>
+                                <h5 class="muted text-center mt-5">1 column form with full width Submit Button</h5>
+                                <div class="cotainer-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <form action="" class="my-5">
+                                                <div class="form-group mt-3">
+                                                    <div class="col-sm-12">
+                                                        <label for="username">Username</label>
+                                                        <input type="text" class="form-control" id="username" placeholder="Enter Username">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <div class="col-sm-12">
+                                                        <label for="pword">Password</label>
+                                                        <input type="password" class="form-control" id="pword" placeholder="Enter Password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <div class="col-sm-12">
+                                                        <label for="email">Email Address</label>
+                                                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <div class="col-sm-12">
+                                                        <label for="address">Address</label>
+                                                        <textarea class="form-control" id="address" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group col-md-12 mt-3">
+                                                    <label for="dropdown">Dropdown</label>
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>Choose...</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                        <option>Option 4</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group mt-3">
+                                                    <div class="col-sm-12">
+                                                        <label for="address">Radio/Checked box</label>
+                                                        <div class="form-check px-5">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+                                                            <label class="form-check-label" for="gridRadios1">
+                                                                Option 2
+                                                            </label>
+                                                        </div> <!-- radio 1 end here -->
+
+                                                        <div class="form-check px-5">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+                                                            <label class="form-check-label" for="gridRadios1">
+                                                                Option 1
+                                                            </label>
+                                                        </div> <!-- radio 2 end here -->
+
+                                                        <div class="form-check px-5">
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox" required>
+                                                                Check Box
+                                                                <span class="form-check-sign">
+                                                                    <span class="check"></span>
+                                                                </span>
+                                                            </label>
+                                                        </div> <!-- check box 1 end here -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="container">
+                                                        <div class="row">   
+                                                            <div class="col-sm-12 my-3">
+                                                                <label for="file">Upload File/ Picture</label>
+                                                                <div class="custom-file" id="customFile" lang="es"> 
+                                                                    <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+                                                                    <label class="custom-file-label bg-muted no-shadow no-border" for="exampleInputFile">
+                                                                        Choose File...
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group mt-4">
+                                                    <div class="col-sm-12">
+                                                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <h5 class="muted mt-5 text-center">2 column form sample</h5>
+                                    <div class="row">   
+                                        <div class="col-sm-6">
+                                            <form action="" class="my-5">
+                                                <p class="lead muted px-3">Normal width Large Submit Button</p>
+                                                <div class="form-group mt-3">
+                                                    <div class="col-sm-12">
+                                                        <label for="username">Username</label>
+                                                        <input type="text" class="form-control" id="username" placeholder="Enter Username">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <div class="col-sm-12">
+                                                        <label for="pword">Password</label>
+                                                        <input type="password" class="form-control" id="pword" placeholder="Enter Password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <div class="col-sm-12">
+                                                        <label for="email">Email Address</label>
+                                                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <div class="col-sm-12">
+                                                        <label for="address">Address</label>
+                                                        <textarea class="form-control" id="address" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group col-md-12 mt-3">
+                                                    <label for="dropdown">Dropdown</label>
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>Choose...</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                        <option>Option 4</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group mt-3">
+                                                    <div class="col-sm-12">
+                                                        <label for="address">Radio/Checked box</label>
+                                                        <div class="form-check px-5">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+                                                            <label class="form-check-label" for="gridRadios1">
+                                                                Option 2
+                                                            </label>
+                                                        </div> <!-- radio 1 end here -->
+
+                                                        <div class="form-check px-5">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+                                                            <label class="form-check-label" for="gridRadios1">
+                                                                Option 1
+                                                            </label>
+                                                        </div> <!-- radio 2 end here -->
+
+                                                        <div class="form-check px-5">
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox" required>
+                                                                Check Box
+                                                                <span class="form-check-sign">
+                                                                    <span class="check"></span>
+                                                                </span>
+                                                            </label>
+                                                        </div> <!-- check box 1 end here -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="container">
+                                                        <div class="row">   
+                                                            <div class="col-sm-12 my-3">
+                                                                <label for="file">Upload File/ Picture</label>
+                                                                <div class="custom-file" id="customFile" lang="es"> 
+                                                                    <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+                                                                    <label class="custom-file-label bg-muted no-shadow no-border" for="exampleInputFile">
+                                                                        Choose File...
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group mt-4">
+                                                    <div class="col-sm-12">
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-6">
+                                                <form action="" class="my-5">
+                                                    <p class="lead muted px-3">Full width Submit Button</p>
+                                                    <div class="form-group mt-3">
+                                                        <div class="col-sm-12">
+                                                            <label for="username">Username</label>
+                                                            <input type="text" class="form-control" id="username" placeholder="Enter Username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mt-3">
+                                                        <div class="col-sm-12">
+                                                            <label for="pword">Password</label>
+                                                            <input type="password" class="form-control" id="pword" placeholder="Enter Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mt-3">
+                                                        <div class="col-sm-12">
+                                                            <label for="email">Email Address</label>
+                                                            <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mt-3">
+                                                        <div class="col-sm-12">
+                                                            <label for="address">Address</label>
+                                                            <textarea class="form-control" id="address" rows="4"></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group col-md-12 mt-3">
+                                                        <label for="dropdown">Dropdown</label>
+                                                        <select id="inputState" class="form-control">
+                                                            <option selected>Choose...</option>
+                                                            <option>Option 1</option>
+                                                            <option>Option 2</option>
+                                                            <option>Option 3</option>
+                                                            <option>Option 4</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group mt-3">
+                                                        <div class="col-sm-12">
+                                                            <label for="address">Radio/Checked box</label>
+                                                            <div class="form-check px-5">
+                                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+                                                                <label class="form-check-label" for="gridRadios1">
+                                                                    Option 2
+                                                                </label>
+                                                            </div> <!-- radio 1 end here -->
+    
+                                                            <div class="form-check px-5">
+                                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+                                                                <label class="form-check-label" for="gridRadios1">
+                                                                    Option 1
+                                                                </label>
+                                                            </div> <!-- radio 2 end here -->
+    
+                                                            <div class="form-check px-5">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" required>
+                                                                    Check Box
+                                                                    <span class="form-check-sign">
+                                                                        <span class="check"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div> <!-- check box 1 end here -->
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="container">
+                                                            <div class="row">   
+                                                                <div class="col-sm-12 my-3">
+                                                                    <label for="file">Upload File/ Picture</label>
+                                                                    <div class="custom-file" id="customFile" lang="es"> 
+                                                                        <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+                                                                        <label class="custom-file-label bg-muted no-shadow no-border" for="exampleInputFile">
+                                                                            Choose File...
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <div class="form-group mt-4">
+                                                        <div class="col-sm-12">
+                                                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                    </div>
+                                </div>
+                           </div> <!-- Forms End here-->
+
+                           <div class="col-sm-12 bg-white py-5 my-5">
+                                <h5 class="text-center mb-5">Buttons</h5> <hr>
+                                <p class="lead my-5 p-bold muted">FTA Buttons</p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <!-- This example I use button but can be use also on A tags -->
+                                            <button class="btn btn-primary btn-sm">Primary small</button>
+                                            <button class="btn btn-secondary btn-sm">Secondary small</button>
+                                            <br> <br>
+                                            <button class="btn btn-primary">Primary Default</button>
+                                            <button class="btn btn-secondary">Secondary Default</button>
+                                            <br> <br>
+                                            <button class="btn btn-primary btn-lg">Primary Large</button>
+                                            <button class="btn btn-secondary btn-lg">Secondary Large</button>
+                                            <br> <br>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-outline-primary btn-sm">Primary small</button>
+                                            <button class="btn btn-outline-secondary btn-sm">Secondary small</button>
+                                            <br> <br>
+                                            <button class="btn btn-outline-primary">Primary Default</button>
+                                            <button class="btn btn-outline-secondary">Secondary Default</button>
+                                            <br> <br>
+                                            <button class="btn btn-outline-primary btn-lg">Primary Large</button>
+                                            <button class="btn btn-outline-secondary btn-lg">Secondary Large</button>
+                                            <br> <br>
+                                        </div>
+
+                                        <div class="col-sm-12 bg-blue py-5">
+                                            <!-- This example I applied it on an A tags -->
+                                            <a href="#" class="btn btn-outline-white btn-sm">White small</a>
+                                            <br> <br>
+                                            <a href="#" class="btn btn-outline-white">white Default</a>
+                                            <br> <br>
+                                            <a href="#" class="btn btn-outline-white btn-lg">White Large</a>
+                                            <br> <br>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+
+                           <div class="col-sm-12 bg-white py-5 my-5">
+                               <h5 class="text-center mb-5">Container Cards with Header</h5> <hr class="mb-5">
+                               <div class="card">
+                                   <div class="card-header bg-blue text-white no-border">
+                                        <h5 class="my-1">Blue Header</h5>
+                                   </div>
+                                   <div class="card-body">
+                                       <p class="lead">
+                                           Content Here
+                                       </p>
+                                   </div>
+                               </div>
+                               <br><br>
+                               <div class="card">
+                                    <div class="card-header bg-orange text-white no-border">
+                                         <h5 class="my-1">Orange Header</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="lead">
+                                            Content Here
+                                        </p>
+                                    </div>
+                                </div>
+                                <br><br>
+
+                                <div class="card">
+                                    <div class="card-header bg-muted text-blue no-border">
+                                        <h5 class="my-1">Muted Header</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="lead">
+                                            Content Here
+                                        </p>
+                                    </div>
+                                </div>
+                           </div>
+                           <!-- Utility classes starts here -->
+                           <div class="col-sm-12 bg-white py-5 my-5">
+                               <h5 class="text-center mb-5">Custom Utility Classes</h5> <hr>
+                               
+                               <p class="lead my-5 p-bold muted">Utility Classes for background color</p>
+                               <div class="card-deck mx-auto">
+                                    <div class="card bg-muted text-blue" style="max-width: 230px; height: 200px;">
+                                        <div class="card-header p-bold">
+                                            bg-muted
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-text"> 
+                                                <small>set background to muted color of black (similar to wolf gray color)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="card bg-blue text-white" style="max-width: 230px; height: 200px;">
+                                        <div class="card-header p-bold">
+                                            bg-blue
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-text"> 
+                                                <small>set background color to FTA blue</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card bg-orange text-white" style="max-width: 230px; height: 200px;">
+                                        <div class="card-header p-bold">
+                                            bg-orange
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-text"> 
+                                                <small>set background color to FTA orange</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-orange-light text-white" style="max-width: 230px; height: 200px;">
+                                        <div class="card-header p-bold">
+                                            bg-orange-light
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-text"> 
+                                                <small>set background color to FTA orange light version (used mostly on buttons)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                               </div> <!-- End card deck -->
+
+                               <div class="card-deck my-5 mx-auto">
+                                    <div class="card bg-white text-blue" style="max-width: 230px; height: 200px;">
+                                        <div class="card-header bg-white p-bold">
+                                            bg-white
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-text"> 
+                                                <small>set background color to white</small>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="card bg-black text-white" style="max-width: 230px; height: 200px;">
+                                        <div class="card-header p-bold">
+                                            bg-black
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-text"> 
+                                                <small>set background color to FTA black</small>
+                                            </div>
+                                        </div>
+                                    </div>             
+                               </div> <!-- End card deck -->
+                               <hr class="my-5">
+                               <p class="lead muted p-bold">Custom Typography Classes</p>
+                               <div class="container">
+                                   <!-- typography classes starts here -->
+                                   <div class="row">
+                                       <div class="col-sm-3">
+                                            <p class="text-blue">text-blue</p>
+                                            <small class="muted">(set text color to FTA blue)</small>
+                                       </div>
+                                       <div class="col-sm-3">
+                                            <p class="text-orange">text-orange</p>
+                                            <small class="muted">(set text color to FTA orange)</small>
+                                       </div>
+                                       <div class="col-sm-3">
+                                            <p class="muted">muted</p>
+                                            <small class="muted">(set text color to FTA muted)</small>
+                                       </div>
+                                       <div class="col-sm-3 bg-blue py-1">
+                                            <p class="text-white">text-white</p>
+                                            <small class="text-white">(set text color to FTA white)</small>
+                                       </div>
+
+                                       <div class="col-sm-3 my-5">
+                                            <p class="p-bold">p-bold</p>
+                                            <small class="muted">(set text to bold)</small>
+                                       </div>
+
+                                       <div class="col-sm-3 my-5">
+                                            <p><a href="#" class="p-bold text-blue hover-orange">hover-orange</a></p>
+                                            <small class="muted">(set hover color to light orange)</small>
+                                       </div>
+                                       <div class="col-sm-3 my-5">
+                                            <p><a href="#" class="p-bold text-orange hover-orange">text-orange hover-orange</a></p>
+                                            <small class="muted">(default hyperlink with orange text color and light orange hover color)</small>
+                                       </div>
+                                   </div> <!-- typography classes ends here -->
+
+                                   <hr class="my-5">
+
+                                    <!-- shadow and border classes starts here -->
+                                   <p class="lead muted p-bold">Shadow and Border Classes</p>
+                                   <div class="row">
+                                        <div class="col-sm-6 my-5">
+                                            <div class="card no-shadow bg-muted">
+                                                <div class="card-header">
+                                                    <h5>no-shadow</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class=" muted">remove container/card/button shadow effect</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 my-5">
+                                            <div class="card drop-shadow-sm">
+                                                <div class="card-header">
+                                                    <h5>drop-shadow-sm</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="muted">add a small drop shadow (for small cards or buttons)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 my-5">
+                                            <div class="card drop-shadow-md">
+                                                <div class="card-header">
+                                                    <h5>drop-shadow-md</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="muted">add a medium size drop shadow (for medium size cards with muted or darker container background)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 my-5">
+                                            <div class="card drop-shadow-lg">
+                                                <div class="card-header">
+                                                    <h5>drop-shadow-lg</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="muted">add a large drop shadow (for large cards with muted or darker container background)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 my-5">
+                                            <div class="card">
+                                                <div class="card-header no-border">
+                                                    <h5>no-border</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="muted">removes border (in this example it removes the header bottom border)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>   <!-- shadow and border classes ends here -->
+                                   <p class="muted"><span class="text-orange p-bold">Note: </span> All Cards has a default subtle drop shadow (the "no-border" example  shows default drop shadow)</p>
+                               </div>
+                           </div> <!-- Utility classes ends here -->
+
+                           <div class="col-sm-12 bg-white py-5">
+                                <div class="container">
+                                    <h5 class="text-center mb-5">Video Container Card <p class="muted"><small class="p-bold">Container is fluid</small></p></h5> 
+                                    
+                                    <hr class="mb-5">
+                                   
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="card mb-3">
+                                                <!-- embed video here -->
+                                                    <img class="card-img-top" src="img/vid.png" alt="Card image cap">
+                                                <!-- end video -->
+                    
+                                                <div class="card-body">
+                                                    <!-- vid Title -->
+                                                    <h5 class="card-title">Personal Development Guide</h5> 
+                                                    <!-- Presentor -->
+                                                    <p class="card-text"><span class="p-bold">Presentor: </span> John Doe</p>
+                                                    <p class="card-text">Short description about the video goes here.</p>
+                                                </div>  
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="card mb-3">
+                                                <!-- embed video here -->
+                                                    <img class="card-img-top" src="img/vid.png" alt="Card image cap">
+                                                <!-- end video -->
+                    
+                                                <div class="card-body">
+                                                    <!-- vid Title -->
+                                                    <h5 class="card-title">Personal Development Guide</h5> 
+                                                    <!-- Presentor -->
+                                                    <p class="card-text"><span class="p-bold">Presentor: </span> John Doe</p>
+                                                    <p class="card-text">Short description about the video goes here.</p>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
 
                         </div>
 
-                        <!-- Breadcrumbs-->
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">
-                            <a href="#">Dashboard</a>
-                            </li>
-                            <li class="breadcrumb-item active">Tables</li>
-                        </ol>
-                
                         <!-- DataTables Example -->
                         <div class="card mb-3">
-                            <div class="card-header">
-                            <i class="fas fa-table"></i>
-                            Data Table Example</div>
+                            <div class="card-header bg-blue text-white no-border py-3 p-bold uppercase">
+                                Data Table Example
+                            </div>
                             <div class="card-body">
                             <div class="table-responsive">
-                                <table id="example" class="table table-striped table-bordered" style="width:100%">
+                                <table id="example" class="table table-striped table-bordered " style="width:100%">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
@@ -169,70 +815,6 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ashton Cox</td>
-                                                <td>Junior Technical Author</td>
-                                                <td>San Francisco</td>
-                                                <td>66</td>
-                                                <td>2009/01/12</td>
-                                                <td>$86,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cedric Kelly</td>
-                                                <td>Senior Javascript Developer</td>
-                                                <td>Edinburgh</td>
-                                                <td>22</td>
-                                                <td>2012/03/29</td>
-                                                <td>$433,060</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Airi Satou</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>33</td>
-                                                <td>2008/11/28</td>
-                                                <td>$162,700</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Brielle Williamson</td>
-                                                <td>Integration Specialist</td>
-                                                <td>New York</td>
-                                                <td>61</td>
-                                                <td>2012/12/02</td>
-                                                <td>$372,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Herrod Chandler</td>
-                                                <td>Sales Assistant</td>
-                                                <td>San Francisco</td>
-                                                <td>59</td>
-                                                <td>2012/08/06</td>
-                                                <td>$137,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Rhona Davidson</td>
-                                                <td>Integration Specialist</td>
-                                                <td>Tokyo</td>
-                                                <td>55</td>
-                                                <td>2010/10/14</td>
-                                                <td>$327,900</td>
-                                            </tr>
                                             <tr>
                                                 <td>Colleen Hurst</td>
                                                 <td>Javascript Developer</td>
@@ -281,359 +863,16 @@
                                                 <td>2012/12/18</td>
                                                 <td>$313,500</td>
                                             </tr>
-                                            <tr>
-                                                <td>Tatyana Fitzpatrick</td>
-                                                <td>Regional Director</td>
-                                                <td>London</td>
-                                                <td>19</td>
-                                                <td>2010/03/17</td>
-                                                <td>$385,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Michael Silva</td>
-                                                <td>Marketing Designer</td>
-                                                <td>London</td>
-                                                <td>66</td>
-                                                <td>2012/11/27</td>
-                                                <td>$198,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Paul Byrd</td>
-                                                <td>Chief Financial Officer (CFO)</td>
-                                                <td>New York</td>
-                                                <td>64</td>
-                                                <td>2010/06/09</td>
-                                                <td>$725,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Gloria Little</td>
-                                                <td>Systems Administrator</td>
-                                                <td>New York</td>
-                                                <td>59</td>
-                                                <td>2009/04/10</td>
-                                                <td>$237,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Bradley Greer</td>
-                                                <td>Software Engineer</td>
-                                                <td>London</td>
-                                                <td>41</td>
-                                                <td>2012/10/13</td>
-                                                <td>$132,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Dai Rios</td>
-                                                <td>Personnel Lead</td>
-                                                <td>Edinburgh</td>
-                                                <td>35</td>
-                                                <td>2012/09/26</td>
-                                                <td>$217,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jenette Caldwell</td>
-                                                <td>Development Lead</td>
-                                                <td>New York</td>
-                                                <td>30</td>
-                                                <td>2011/09/03</td>
-                                                <td>$345,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Yuri Berry</td>
-                                                <td>Chief Marketing Officer (CMO)</td>
-                                                <td>New York</td>
-                                                <td>40</td>
-                                                <td>2009/06/25</td>
-                                                <td>$675,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Caesar Vance</td>
-                                                <td>Pre-Sales Support</td>
-                                                <td>New York</td>
-                                                <td>21</td>
-                                                <td>2011/12/12</td>
-                                                <td>$106,450</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Doris Wilder</td>
-                                                <td>Sales Assistant</td>
-                                                <td>Sidney</td>
-                                                <td>23</td>
-                                                <td>2010/09/20</td>
-                                                <td>$85,600</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Angelica Ramos</td>
-                                                <td>Chief Executive Officer (CEO)</td>
-                                                <td>London</td>
-                                                <td>47</td>
-                                                <td>2009/10/09</td>
-                                                <td>$1,200,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Gavin Joyce</td>
-                                                <td>Developer</td>
-                                                <td>Edinburgh</td>
-                                                <td>42</td>
-                                                <td>2010/12/22</td>
-                                                <td>$92,575</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jennifer Chang</td>
-                                                <td>Regional Director</td>
-                                                <td>Singapore</td>
-                                                <td>28</td>
-                                                <td>2010/11/14</td>
-                                                <td>$357,650</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Brenden Wagner</td>
-                                                <td>Software Engineer</td>
-                                                <td>San Francisco</td>
-                                                <td>28</td>
-                                                <td>2011/06/07</td>
-                                                <td>$206,850</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Fiona Green</td>
-                                                <td>Chief Operating Officer (COO)</td>
-                                                <td>San Francisco</td>
-                                                <td>48</td>
-                                                <td>2010/03/11</td>
-                                                <td>$850,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Shou Itou</td>
-                                                <td>Regional Marketing</td>
-                                                <td>Tokyo</td>
-                                                <td>20</td>
-                                                <td>2011/08/14</td>
-                                                <td>$163,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Michelle House</td>
-                                                <td>Integration Specialist</td>
-                                                <td>Sidney</td>
-                                                <td>37</td>
-                                                <td>2011/06/02</td>
-                                                <td>$95,400</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Suki Burks</td>
-                                                <td>Developer</td>
-                                                <td>London</td>
-                                                <td>53</td>
-                                                <td>2009/10/22</td>
-                                                <td>$114,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Prescott Bartlett</td>
-                                                <td>Technical Author</td>
-                                                <td>London</td>
-                                                <td>27</td>
-                                                <td>2011/05/07</td>
-                                                <td>$145,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Gavin Cortez</td>
-                                                <td>Team Leader</td>
-                                                <td>San Francisco</td>
-                                                <td>22</td>
-                                                <td>2008/10/26</td>
-                                                <td>$235,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Martena Mccray</td>
-                                                <td>Post-Sales support</td>
-                                                <td>Edinburgh</td>
-                                                <td>46</td>
-                                                <td>2011/03/09</td>
-                                                <td>$324,050</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Unity Butler</td>
-                                                <td>Marketing Designer</td>
-                                                <td>San Francisco</td>
-                                                <td>47</td>
-                                                <td>2009/12/09</td>
-                                                <td>$85,675</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Howard Hatfield</td>
-                                                <td>Office Manager</td>
-                                                <td>San Francisco</td>
-                                                <td>51</td>
-                                                <td>2008/12/16</td>
-                                                <td>$164,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Hope Fuentes</td>
-                                                <td>Secretary</td>
-                                                <td>San Francisco</td>
-                                                <td>41</td>
-                                                <td>2010/02/12</td>
-                                                <td>$109,850</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Vivian Harrell</td>
-                                                <td>Financial Controller</td>
-                                                <td>San Francisco</td>
-                                                <td>62</td>
-                                                <td>2009/02/14</td>
-                                                <td>$452,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Timothy Mooney</td>
-                                                <td>Office Manager</td>
-                                                <td>London</td>
-                                                <td>37</td>
-                                                <td>2008/12/11</td>
-                                                <td>$136,200</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jackson Bradshaw</td>
-                                                <td>Director</td>
-                                                <td>New York</td>
-                                                <td>65</td>
-                                                <td>2008/09/26</td>
-                                                <td>$645,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Olivia Liang</td>
-                                                <td>Support Engineer</td>
-                                                <td>Singapore</td>
-                                                <td>64</td>
-                                                <td>2011/02/03</td>
-                                                <td>$234,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Bruno Nash</td>
-                                                <td>Software Engineer</td>
-                                                <td>London</td>
-                                                <td>38</td>
-                                                <td>2011/05/03</td>
-                                                <td>$163,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sakura Yamamoto</td>
-                                                <td>Support Engineer</td>
-                                                <td>Tokyo</td>
-                                                <td>37</td>
-                                                <td>2009/08/19</td>
-                                                <td>$139,575</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Thor Walton</td>
-                                                <td>Developer</td>
-                                                <td>New York</td>
-                                                <td>61</td>
-                                                <td>2013/08/11</td>
-                                                <td>$98,540</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Finn Camacho</td>
-                                                <td>Support Engineer</td>
-                                                <td>San Francisco</td>
-                                                <td>47</td>
-                                                <td>2009/07/07</td>
-                                                <td>$87,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Serge Baldwin</td>
-                                                <td>Data Coordinator</td>
-                                                <td>Singapore</td>
-                                                <td>64</td>
-                                                <td>2012/04/09</td>
-                                                <td>$138,575</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Zenaida Frank</td>
-                                                <td>Software Engineer</td>
-                                                <td>New York</td>
-                                                <td>63</td>
-                                                <td>2010/01/04</td>
-                                                <td>$125,250</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Zorita Serrano</td>
-                                                <td>Software Engineer</td>
-                                                <td>San Francisco</td>
-                                                <td>56</td>
-                                                <td>2012/06/01</td>
-                                                <td>$115,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jennifer Acosta</td>
-                                                <td>Junior Javascript Developer</td>
-                                                <td>Edinburgh</td>
-                                                <td>43</td>
-                                                <td>2013/02/01</td>
-                                                <td>$75,650</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cara Stevens</td>
-                                                <td>Sales Assistant</td>
-                                                <td>New York</td>
-                                                <td>46</td>
-                                                <td>2011/12/06</td>
-                                                <td>$145,600</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Hermione Butler</td>
-                                                <td>Regional Director</td>
-                                                <td>London</td>
-                                                <td>47</td>
-                                                <td>2011/03/21</td>
-                                                <td>$356,250</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Lael Greer</td>
-                                                <td>Systems Administrator</td>
-                                                <td>London</td>
-                                                <td>21</td>
-                                                <td>2009/02/27</td>
-                                                <td>$103,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>$86,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Shad Decker</td>
-                                                <td>Regional Director</td>
-                                                <td>Edinburgh</td>
-                                                <td>51</td>
-                                                <td>2008/11/13</td>
-                                                <td>$183,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Michael Bruce</td>
-                                                <td>Javascript Developer</td>
-                                                <td>Singapore</td>
-                                                <td>29</td>
-                                                <td>2011/06/27</td>
-                                                <td>$183,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Donna Snider</td>
-                                                <td>Customer Support</td>
-                                                <td>New York</td>
-                                                <td>27</td>
-                                                <td>2011/01/25</td>
-                                                <td>$112,000</td>
-                                            </tr>
+   
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th class="muted">Name</th>
+                                                <th class="muted">Position</th>
+                                                <th class="muted">Office</th>
+                                                <th class="muted">Age</th>
+                                                <th class="muted">Start date</th>
+                                                <th class="muted">Salary</th>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -645,7 +884,7 @@
                 <!-- Breadcrumbs-->
              <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="#">Dashboard</a>
+                  <a href="#" class="text-blue hover-orange">Dashboard</a>
                 </li>
                 <li class="breadcrumb-item active">Charts</li>
               </ol>

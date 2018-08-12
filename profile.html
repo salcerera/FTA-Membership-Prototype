@@ -23,7 +23,7 @@
   <body>
       <header id="top">
           <!-- Fixed navbar -->
-          <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
             <div class="container py-2">
                 <a class="navbar-brand" href="#"><img src="img/Logo-dark.png" width = "24px" alt="FTA Logo" class="mx-3"><span class="uppercase"></span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@
                       </li>
 
                       <li class="nav-item active mx-2">
-                            <a class="nav-link disabled" href="affilliates.html">Affilliates</a>
+                            <a class="nav-link disabled" href="affiliates.html">Affiliates</a>
                       </li>
 
                       <li class="nav-item dropdown active mx-2">
@@ -100,39 +100,47 @@
               <p class="lead text-center muted mb-5">Short description here about this page</p>
               <div class="row">
                 <div class="col-sm-4 my-2">
-                    <div class="card py-3">
+                    <div class="card">
+                        <div class="card-header bg-blue">
+                            <h5 class="text-center text-white">Profile</h5>
+                        </div>
                         <div class="card-body">
                             <img src="img/jsnow.png" alt="" width="100px" height="100px" class="mx-auto d-block">
                             <div class="user-details">
                                 <p class="lead p-bold mt-3 text-center">John Snow</p> <!-- Name -->
                                 <hr>
-                                <p class="mb-3  pl-5"><i class="fas fa-map-marker-alt mr-2 text-orange"></i>The North</p>
-                                <p class="mb-3  pl-5"><i class="fas fa-envelope-square mr-2 text-orange"></i>john.snow@got.com</p>
-                                <p class="mb-3  pl-5"><i class="fas fa-mobile-alt mr-2 text-orange"></i>639290000000</p> 
-                                <p class="user-social mt-4">
-                                    <a href="#" class="social-icons"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="#" class="social-icons"><i class="fab fa-instagram text-white"></i></a>
-                                </p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="mb-3"><i class="fas fa-map-marker-alt mr-2 text-orange"></i>The North</p>
+                                            <p class="mb-3"><i class="fas fa-envelope-square mr-2 text-orange"></i>john.snow@got.com</p>
+                                            <p class="mb-3"><i class="fas fa-id-badge mr-2 text-orange"></i>10101</p>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
                 </div> <!-- end col -->
                   <div class="col-sm-8 my-2 mb-5">
-                    <div class="card py-3">
+                    <div class="card">
+                        <div class="card-header bg-blue">
+                            <h5 class="text-center text-white">Update Information</h5>
+                        </div>
                         <div class="card-body">
-                            <h5 class="text-center">Update Information</h5>
-                            <form class="mt-5">
+                            <form class="mt-3">
+                                <h5 class="my-3 muted px-3">Basic Information</h5>
                                 <div class="form-group">
                                     <div class="container">
                                         <div class="row">
-                                                <div class="col-sm-6 my-1">
-                                                    <label for="username">Username</label>
-                                                    <input type="text" class="form-control" id="username" placeholder="johnsnow">
-                                                </div>
-                                                <div class="col-sm-6 my-1">
-                                                    <label for="pword">Password</label>
-                                                    <input type="password" class="form-control" id="pword" placeholder="password">
-                                                </div>
+                                            <div class="col-sm-6 my-1">
+                                                <label for="username">Username</label>
+                                                <input type="text" class="form-control" id="username" placeholder="johnsnow">
+                                            </div>
+                                            <div class="col-sm-6 my-1">
+                                                <label for="email">Email Address</label>
+                                                <input type="email" class="form-control" id="email" placeholder="john.snow@got.com">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -155,38 +163,55 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-sm-6 my-1">
-                                                <label for="email">Email Address</label>
-                                                <input type="email" class="form-control" id="email" placeholder="john.snow@got.com">
+                                                <label for="sponsor">Sponsor</label>
+                                                <input type="text" class="form-control" id="sponsor" placeholder="10101">
                                             </div>
                                             <div class="col-sm-6 my-1">
-                                                <label for="mobile">Mobile</label>
-                                                <input type="tel" class="form-control" id="mobile" placeholder="639290000000">
+                                                <label for="country">Country</label>
+                                                <input type="text" class="form-control" id="country" placeholder="The North">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="form-group">
+                                    <div class="container">
+                                        <div class="row">   
+                                            <div class="col-sm-12 my-3">
+                                                <label for="file">Upload New Picture</label>
+                                                <div class="custom-file" id="customFile" lang="es"> 
+                                                    <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+                                                    <label class="custom-file-label bg-muted no-shadow no-border" for="exampleInputFile">
+                                                        Choose File...
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <hr class="my-5">
+
+                                <h5 class="mt-5 mb-3 muted px-3">Change Password</h5>
                                 <div class="form-group">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-sm-12">
-                                                <label for="address">Address</label>
-                                                <textarea class="form-control" id="address" rows="3"></textarea>
-                                            </div>
+                                                <div class="col-sm-6 my-1">
+                                                    <label for="current-pword">Current Password</label>
+                                                    <input type="password" class="form-control" id="current-pword" placeholder="">
+                                                </div> 
+                                                <div class="offset-6"></div>
+
+                                                <div class="col-sm-6 my-1">
+                                                    <label for="new-pword">New Password</label>
+                                                    <input type="password" class="form-control" id="new-pword" placeholder="">
+                                                </div>
+                                                <div class="col-sm-6 my-1">
+                                                    <label for="confirm-new-pword">Confirm New Password</label>
+                                                    <input type="password" class="form-control" id="confirm-new-pword" placeholder="">
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group mt-3">
-                                    <div class="col-sm-12">
-                                        <label for="fb">Facebook Link</label>
-                                        <input type="url" class="form-control" id="fb" placeholder="https://www.facebook.com/john.snow">
-                                    </div>
-                                </div>
-                                <div class="form-group mt-3">
-                                    <div class="col-sm-12">
-                                        <label for="insta">Instagram Link</label>
-                                        <input type="url" class="form-control" id="insta" placeholder="https://www.instagram.com/john.snow">
-                                    </div>
-                                </div>
+
                                 <div class="form-group mt-4">
                                     <div class="col-sm-12">
                                         <button type="submit" class="btn btn-primary btn-block">Save Changes</button>
@@ -194,7 +219,7 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> <!-- end card -->
                   </div> <!-- end col -->
               </div> <!-- end row -->
           </div> <!-- end container -->
