@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('#affil').DataTable();
-} );
+} );    
 
 $(document).ready(function() {
     $('#encash').DataTable();
@@ -38,3 +38,9 @@ $(document).ready(function() {
 $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
 })
+
+
+// Initialization
+$('#my-element').datepicker([options])
+// Access instance of plugin
+$('#my-element').data('datepicker')
